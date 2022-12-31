@@ -1,0 +1,115 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/83c87aae69.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//db.onlinewebfonts.com/c/796446c4820b0890b0d5f00f02efbd45?family=Pricedown" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <div id="container" onload="laodItems()">
+        <!-- <div class="bg" id="bg"> -->
+        <div class="bg" id="editable">
+            <div class="healt-bg">
+                <div class="health" id="health"></div>
+                <div id="healthicon"></div>
+            </div>
+            <div class="armor-bg">
+                <div class="armor" id="armor"></div>
+                <div id="armoricon"></div>
+            </div>
+            <div class="hunger-bg">
+                <div class="hunger" id="hunger"></div>
+                <div id="hungericon"></div>
+            </div>
+            <div class="thirst-bg">
+                <div class="thirst" id="thirst"></div>
+                <div id="drinkicon"></div>
+            </div>
+            <button class="show"></button>
+            <div class="cash" id="cash"></div>
+        </div>
+        <!-- </div> -->
+        <!-- <div class="society" id="society"> -->
+        <!-- <div class="job" id="job"> -->
+        <!-- <div class="cash-icon"></div> -->
+        <!-- </div> -->
+        <!-- <div class="edit" id="edit">
+            <div class="edit-menu" id="edit-menu">
+                <a style="color:#7cc576">VL</a>:RP - Hud edit menu
+                <div class="edit-1"></div>
+                <div class="id" id="id"></div>
+                <div class="time" id="date"></div>
+            </div>
+        </div> -->
+        <div class="mapborder">
+            <div class="header">
+                <div class="id" id="id"></div>
+                <div class="time" id="date"></div>
+            </div>
+        </div>
+
+
+
+        <script>
+            dragElement(document.getElementById("editable"));
+
+
+
+            function dragElement(elmnt) {
+                var pos1 = 0,
+                    pos2 = 0,
+                    pos3 = 0,
+                    pos4 = 0;
+                if (document.getElementById(elmnt.id + "header")) {
+
+
+                } else {
+
+                    elmnt.onmousedown = dragMouseDown;
+
+                }
+
+                function dragMouseDown(e) {
+                    e = e || window.event;
+                    e.preventDefault();
+
+                    pos3 = e.clientX;
+                    pos4 = e.clientY;
+                    document.onmouseup = closeDragElement;
+
+                    document.onmousemove = elementDrag;
+                }
+
+                function elementDrag(e) {
+                    e = e || window.event;
+                    e.preventDefault();
+
+                    pos1 = pos3 - e.clientX;
+                    pos2 = pos4 - e.clientY;
+                    pos3 = e.clientX;
+                    pos4 = e.clientY;
+
+                    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+                }
+
+                function closeDragElement() {
+                    document.onmouseup = null;
+                    document.onmousemove = null;
+                }
+            }
+        </script>
+
+        <!-- <p id="id" class="text-id">0</p> -->
+        <!-- <p id="date" class="text">Loading...</p> -->
+        <script src="./script.js" type="text/javascript"></script>
+</body>
+
+</html>

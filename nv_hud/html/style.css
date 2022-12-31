@@ -1,0 +1,216 @@
+@font-face {
+    font-family: 'Pricedown';
+    src: url('../pdown.ttf')
+}
+
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+html {
+    overflow: hidden;
+}
+
+#container {}
+
+.bg {
+    position: absolute;
+    height: 11%;
+    width: 17%;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 82%;
+    top: 2%;
+}
+
+.healt-bg {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border-radius: 10px; */
+    top: 5%;
+    left: 4%;
+    border: 2px solid black;
+}
+
+#health {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #5bcf51;
+    /*#7cc576*/
+    /* border-radius: 10px; */
+}
+
+.armor-bg {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 5%;
+    left: 28%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border-radius: 10px; */
+    border: 2px solid black;
+}
+
+#armor {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #1759c9;
+    /* border-radius: 10px; */
+}
+
+.hunger-bg {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 5%;
+    left: 53%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border-radius: 10px; */
+    border: 2px solid black;
+}
+
+#hunger {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    background-color: #edab22;
+    /* border-radius: 10px; */
+}
+
+.thirst-bg {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: 5%;
+    left: 78%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* border-radius: 10px; */
+    border: 2px solid black;
+}
+
+#thirst {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    background-color: #417aae;
+    /* border-radius: 10px; */
+}
+
+#date {
+    position: absolute;
+    left: 0%;
+    font-size: 20px;
+    top: -10%;
+    font-family: Pricedown;
+    color: white;
+}
+
+.cash-icon {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-image: url(https://media.discordapp.net/attachments/1007392225023512576/1008820642776371220/kozpenz.png);
+}
+
+#cash {
+    position: absolute;
+    font-size: 35px;
+    font-family: Pricedown;
+    left: 25%;
+    top: 60%;
+}
+
+#id {
+    position: absolute;
+    left: 87%;
+    font-size: 20px;
+    top: -10%;
+    font-family: Pricedown;
+    color: white;
+    /* display: none; */
+}
+
+#healthicon {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-image: url(https://media.discordapp.net/attachments/1007323975451418684/1054466318486741204/heart.png);
+    top: 10%;
+    left: 8%;
+}
+
+#armoricon {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-image: url(https://media.discordapp.net/attachments/1007323975451418684/1054466823921336350/shield.png);
+    top: 10%;
+    left: 8%;
+}
+
+#hungericon {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-image: url(https://media.discordapp.net/attachments/1007323975451418684/1054466813683052624/hunger.png);
+    top: 10%;
+    left: 10%;
+}
+
+#drinkicon {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-image: url(https://media.discordapp.net/attachments/1007323975451418684/1054466830338641950/thirst.png);
+    top: 10%;
+    left: 10%;
+}
+
+.edit {
+    display: none;
+}
+
+.edit-menu {
+    position: absolute;
+    height: 25%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0%;
+    top: 75%;
+    font-family: Pricedown;
+    color: White;
+    font-size: 35px;
+    text-align: center;
+}
+
+.edit-1 {}
+
+.show {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-image: url(https://cdn.discordapp.com/attachments/1007323975451418684/1055446148757852200/eye.png);
+    background-color: #00000000;
+    border: none;
+    left: 0%;
+    top: 60%;
+}
+
+.mapborder {
+    position: absolute;
+    /* background-color: black; */
+    height: 200px;
+    width: 290px;
+    top: 78.5%;
+    border: 2px solid black;
+    left: 1%;
+}
+
+.header {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.686);
+    width: 100%;
+    height: 20px;
+}
